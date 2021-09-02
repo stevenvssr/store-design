@@ -8,11 +8,15 @@ const LeftGrid = styled.section`
   flex-direction: column;
   text-align: center;
   float: left;
-  align-items: left;
   width: 100%;
+  min-width: 320px;
 
   @media (max-width: 1024px) {
     align-items: center;
+  }
+
+  @media (max-width: 325px) {
+    padding-left: 70px;
   }
 `;
 

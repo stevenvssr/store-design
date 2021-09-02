@@ -5,6 +5,7 @@ const Float = styled.div`
   justify-content: flex-end;
   margin: 10px;
   align-items: center;
+  min-width: 400px;
 `;
 
 const Label = styled.label`
@@ -15,6 +16,11 @@ const SelectStyle = styled.select`
   width: 100px;
   border-radius: 30px;
   padding: 5px;
+  background: white;
+
+  @media (max-width: 1024px) {
+    margin-right: 10px;
+  }
 `;
 
 const Select = (props) => {

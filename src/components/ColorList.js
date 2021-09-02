@@ -4,7 +4,7 @@ import ColorBall from "./ColorBall";
 const List = styled.ul`
   list-style: none;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
 
   @media (max-width: 768px) {
