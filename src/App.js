@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar";
+import NavText from "./components/NavText";
+import Container from "./components/Container";
+import LeftContent from "./components/LeftGrid";
+import RightGrid from "./components/RightGrid";
+import Select from "./components/Select";
+import { useState } from "react";
 
 function App() {
+  const [direction, setDirection] = useState("default");
+  const handleSelectChange = (e) => {
+    e.target.value === "reverse"
+      ? setDirection("reverse")
+      : setDirection("default");
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar>
+        <NavText />
+      </Navbar>
+      <Select onChange={handleSelectChange} />
+      <Container>
+        <LeftContent />
+        <RightGrid direction={direction} />
+      </Container>
+    </>
   );
 }
 
