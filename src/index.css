@@ -41,7 +41,6 @@ code {
 .content {
   display: none;
   overflow: hidden;
-  text-align: start;
   width: 100%;
 }
 
@@ -68,11 +67,6 @@ code {
   right: 25px;
 }
 
-.size-list {
-  display: flex;
-  justify-content: center;
-}
-
 @media (max-width: 1023px) {
   .hide {
     display: none;
@@ -81,6 +75,6 @@ code {
 
 @media (max-width: 768px) {
   .category-list {
-    justify-items: center;
+    justify-items: start;
   }
 }

@@ -6,15 +6,10 @@ const LeftGrid = styled.section`
   height: 100%;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
   float: left;
   width: 100%;
   min-width: 390px;
-
-  @media (max-width: 1024px) {
-    align-items: center;
-    align-content: center;
-  }
 
   @media (max-width: 424px) {
     padding-left: 20px;
@@ -22,6 +17,15 @@ const LeftGrid = styled.section`
 
   @media (max-width: 325px) {
     padding-left: 70px;
+  }
+`;
+
+const SizeList = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: 1500px) {
+    justify-content: flex-start;
   }
 `;
 
@@ -52,14 +56,14 @@ const LeftContent = () => {
         Maat
       </button>
       <div className="content">
-        <div className="size-list">
+        <SizeList>
           <SizeBall size="S" />
           <SizeBall size="M" />
           <SizeBall size="L" />
           <SizeBall size="XL" />
           <SizeBall size="XXL" />
           <SizeBall size="3XL" />
-        </div>
+        </SizeList>
       </div>
       <button onClick={handleButtonClick} type="button" className="collapsible">
         Kleur

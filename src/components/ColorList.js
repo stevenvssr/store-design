@@ -8,14 +8,17 @@ const List = styled.ul`
 
   @media (min-width: 426px) and (max-width: 768px) {
     flex-direction: row;
-    width: 90%;
-    gap: 10px;
-    justify-content: center;
+    justify-content: space-between;
+    position: relative;
+    right: 30px;
   }
 
   @media (max-width: 425px) {
     display: grid;
+    justify-items: start;
     grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    right: 30px;
   }
 `;
 
