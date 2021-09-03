@@ -36,7 +36,7 @@ const ClothesColor = styled.div`
   bottom: 10px;
   right: 10px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1023px) {
     bottom: 20px;
   }
 `;
@@ -64,7 +64,7 @@ const Bold = styled.strong`
   display: flex;
   justify-content: flex-end;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1020px) {
     position: relative;
     bottom: 12px;
   }
