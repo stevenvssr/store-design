@@ -13,7 +13,7 @@ const Label = styled.label`
 `;
 
 const SelectStyle = styled.select`
-  width: 100px;
+  width: 115px;
   border-radius: 30px;
   padding: 5px;
   background: white;

@@ -4,13 +4,13 @@ import ColorBall from "./ColorBall";
 const List = styled.ul`
   list-style: none;
   display: flex;
-  justify-content: center;
   flex-direction: column;
 
   @media (min-width: 426px) and (max-width: 768px) {
     flex-direction: row;
     width: 90%;
     gap: 10px;
+    justify-content: center;
   }
 
   @media (max-width: 425px) {
@@ -26,6 +26,10 @@ const ListItem = styled.li`
 
   @media (max-width: 768px) {
     margin-bottom: 0;
+  }
+  @media (min-width: 1024px) {
+    position: relative;
+    right: 35px;
   }
 `;
 
