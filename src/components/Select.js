@@ -17,9 +17,19 @@ const SelectStyle = styled.select`
   border-radius: 30px;
   padding: 5px;
   background: white;
+  outline: none;
+  margin-right: 5px;
 
-  @media (max-width: 1024px) {
-    margin-right: 10px;
+  @media (min-width: 1450px) {
+    margin-right: 30px;
+  }
+
+  @media (max-width: 1023px) {
+    margin-right: 2px;
+  }
+
+  @media (max-width: 375px) {
+    margin-right: 15px;
   }
 `;
 

@@ -7,6 +7,7 @@ const ProductCard = styled.div`
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin-bottom: 25px;
 
   @media (max-width: 768px) {
     margin-bottom: 20px;
@@ -19,12 +20,25 @@ const TextPrice = styled.div`
   font-size: 0.6em;
   justify-content: space-between;
   text-align: center;
+  align-items: center;
+
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    align-items: start;
+  }
 `;
 
 const ClothesColor = styled.div`
   display: flex;
   justify-content: flex-start;
   margin-left: 5px;
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+
+  @media (max-width: 768px) {
+    bottom: 20px;
+  }
 `;
 
 const SaleLabel = styled.div`
@@ -45,6 +59,16 @@ const Image = styled.img`
   width: 200px;
   heigth: 300px;
 `;
+
+const Bold = styled.strong`
+  display: flex;
+  justify-content: flex-end;
+
+  @media (max-width: 768px) {
+    position: relative;
+    bottom: 12px;
+  }
+`;
 const Card = (props) => {
   return (
     <ProductCard>
@@ -53,30 +77,14 @@ const Card = (props) => {
         {props.sale && <SaleLabel>Sale - ${props.saleAmount}%</SaleLabel>}
       </div>
       <TextPrice>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "flex-start",
-          }}
-        >
-          <p>{props.text}</p>
-        </div>
-        <div>
-          <p>
-            <strong
-              style={{
-                display: "flex",
-                justifyContent: "flex-end",
-              }}
-            >
-              <span>{props.normalPrice}</span>
-              <span className="old-price" style={{ marginRight: "4px" }}>
-                {props.oldPrice}{" "}
-              </span>
-              <span className="discount-price">{props.discountPrice}</span>
-            </strong>
+        <p>{props.text}</p>
+        <Bold>
+          {props.normalPrice && <p>{props.normalPrice}</p>}
+          <p className="old-price" style={{ marginRight: "4px" }}>
+            {props.oldPrice}{" "}
           </p>
-        </div>
+          <p className="discount-price">{props.discountPrice}</p>
+        </Bold>
       </TextPrice>
       <ClothesColor>
         <ColorBall color={props.color} size="10" />

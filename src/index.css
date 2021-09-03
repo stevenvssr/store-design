@@ -57,12 +57,30 @@ code {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
-ul {
+.category-list {
+  display: grid;
   list-style: none;
+  gap: 10px;
+}
+
+.category-list li {
+  position: relative;
+  right: 25px;
+}
+
+.size-list {
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 1023px) {
   .hide {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .category-list {
+    justify-items: center;
   }
 }

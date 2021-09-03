@@ -7,9 +7,10 @@ const List = styled.ul`
   justify-content: center;
   flex-direction: column;
 
-  @media (max-width: 768px) {
+  @media (min-width: 426px) and (max-width: 768px) {
     flex-direction: row;
     width: 90%;
+    gap: 10px;
   }
 
   @media (max-width: 425px) {

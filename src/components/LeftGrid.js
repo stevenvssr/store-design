@@ -9,10 +9,15 @@ const LeftGrid = styled.section`
   text-align: center;
   float: left;
   width: 100%;
-  min-width: 320px;
+  min-width: 390px;
 
   @media (max-width: 1024px) {
     align-items: center;
+    align-content: center;
+  }
+
+  @media (max-width: 424px) {
+    padding-left: 20px;
   }
 
   @media (max-width: 325px) {
@@ -37,13 +42,7 @@ const LeftContent = () => {
         Categorie
       </button>
       <div className="content">
-        <ul
-          style={{
-            display: "grid",
-            gridTemplateRows: "repeat(3, 1fr)",
-            gap: "10px",
-          }}
-        >
+        <ul className="category-list">
           <li>Damesmode</li>
           <li>Nieuwe collectie</li>
           <li>Sale</li>
@@ -53,7 +52,7 @@ const LeftContent = () => {
         Maat
       </button>
       <div className="content">
-        <div style={{ display: "flex" }}>
+        <div className="size-list">
           <SizeBall size="S" />
           <SizeBall size="M" />
           <SizeBall size="L" />

@@ -6,6 +6,10 @@ const Container = styled.div`
   height: auto;
   width: 100vw;
 
+  @media (min-width: 1450px) {
+    height: 50vh;
+  }
+
   @media (max-width: 1023px) {
     display: flex;
     flex-direction: column;

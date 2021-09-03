@@ -16,7 +16,7 @@ const RightGridStyle = styled.section`
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     grid-template-columns: repeat(2, 1fr);
   }
 `;
