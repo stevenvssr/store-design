@@ -8,11 +8,10 @@ const LeftGrid = styled.section`
   flex-direction: column;
   text-align: left;
   width: 100%;
-  min-width: 390px;
+  min-width: 300px;
 
   @media (min-width: 410px) and (max-width: 1024px) {
-    width: 100%;
-    padding-left: 10px;
+    padding-left: 18px;
     margin-right: 25px;
   }
 

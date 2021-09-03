@@ -6,7 +6,7 @@ const List = styled.ul`
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 426px) and (max-width: 768px) {
+  @media (min-width: 426px) and (max-width: 1023px) {
     flex-direction: row;
     justify-content: space-between;
     position: relative;

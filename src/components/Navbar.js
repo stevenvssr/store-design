@@ -7,6 +7,7 @@ const Navbar = styled.nav`
   justify-content: center;
   margin: 0;
   align-items: center;
+  width: 100vw;
   min-width: 400px;
 `;
 export default Navbar;
