@@ -74,7 +74,7 @@ const Card = (props) => {
     <ProductCard>
       <Image src={props.img} alt="product" />
       <div style={{ height: "0" }}>
-        {props.sale && <SaleLabel>Sale - ${props.saleAmount}%</SaleLabel>}
+        {props.sale && <SaleLabel>Sale - {props.saleAmount}%</SaleLabel>}
       </div>
       <TextPrice>
         <p>{props.text}</p>
