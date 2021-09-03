@@ -7,9 +7,12 @@ const LeftGrid = styled.section`
   display: flex;
   flex-direction: column;
   text-align: left;
-  float: left;
   width: 100%;
   min-width: 390px;
+
+  @media (min-width: 425px) and (max-width: 700px) {
+    width: 95%;
+  }
 
   @media (max-width: 424px) {
     padding-left: 20px;
