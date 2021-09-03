@@ -8,6 +8,6 @@ const Navbar = styled.nav`
   margin: 0;
   align-items: center;
   width: 100%;
-  min-width: 420px;
+  min-width: 425px;
 `;
 export default Navbar;
