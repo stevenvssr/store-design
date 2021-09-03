@@ -11,7 +11,9 @@ const LeftGrid = styled.section`
   min-width: 390px;
 
   @media (min-width: 410px) and (max-width: 1024px) {
-    width: 30%;
+    width: 100%;
+    padding-left: 10px;
+    margin-right: 25px;
   }
 
   @media (max-width: 424px) {
